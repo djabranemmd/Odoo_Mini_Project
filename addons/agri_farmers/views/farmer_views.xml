@@ -1,0 +1,95 @@
+<odoo>
+
+<record id="farmer_form"
+model="ir.ui.view">
+
+<field name="name">
+farmer.form
+</field>
+
+<field name="model">
+agri.farmer
+</field>
+
+<field name="arch"
+type="xml">
+
+<form>
+<sheet>
+
+<group>
+
+<field name="name"/>
+<field name="national_id"/>
+<field name="phone"/>
+<field name="birth_date"/>
+<field name="province"/>
+<field name="commune"/>
+<field name="verified"/>
+<field name="state"/>
+
+</group>
+
+</sheet>
+</form>
+
+</field>
+</record>
+
+
+
+<record id="farmer_tree"
+model="ir.ui.view">
+
+<field name="model">
+agri.farmer
+</field>
+
+<field name="arch"
+type="xml">
+
+<tree>
+
+<field name="name"/>
+<field name="national_id"/>
+<field name="state"/>
+
+</tree>
+
+</field>
+</record>
+
+
+
+<record id="farmer_action"
+model="ir.actions.act_window">
+
+<field name="name">
+Farmers
+</field>
+
+<field name="res_model">
+agri.farmer
+</field>
+
+<field name="view_mode">
+tree,form
+</field>
+
+</record>
+
+
+
+<menuitem
+id="farm_root"
+name="Agriculture"/>
+
+
+<menuitem
+id="farmers_menu"
+name="Farmers"
+parent="farm_root"
+action="farmer_action"/>
+
+
+</odoo>
