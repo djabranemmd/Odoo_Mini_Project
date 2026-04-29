@@ -1,0 +1,59 @@
+<odoo>
+
+<record id="production_form"
+model="ir.ui.view">
+
+<field name="name">
+production.form
+</field>
+
+<field name="model">
+agri.production
+</field>
+
+<field name="arch"
+type="xml">
+
+<form>
+
+<header>
+
+<button
+name="action_irrigation"
+string="Irrigation"
+type="object"/>
+
+<button
+name="action_growth"
+string="Growth"
+type="object"/>
+
+<button
+name="action_harvest"
+string="Harvest"
+type="object"/>
+
+<field name="state"
+widget="statusbar"/>
+
+</header>
+
+
+<sheet>
+<group>
+
+<field name="farmer_id"/>
+<field name="land_id"/>
+<field name="crop_type"/>
+<field name="expected_qty"/>
+<field name="actual_qty"/>
+
+</group>
+</sheet>
+
+</form>
+
+</field>
+</record>
+
+</odoo>
