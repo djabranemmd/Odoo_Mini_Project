@@ -1,0 +1,31 @@
+<odoo>
+
+<record id="land_form"
+model="ir.ui.view">
+
+<field name="model">
+agri.land
+</field>
+
+<field name="arch"
+type="xml">
+
+<form>
+<sheet>
+<group>
+
+<field name="name"/>
+<field name="farmer_id"/>
+<field name="area"/>
+<field name="soil_type"/>
+<field name="latitude"/>
+<field name="longitude"/>
+
+</group>
+</sheet>
+</form>
+
+</field>
+</record>
+
+</odoo>

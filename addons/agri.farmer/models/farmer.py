@@ -43,3 +43,8 @@ class AgriFarmer(models.Model):
                 raise ValidationError(
                     'Phone invalid'
                 )
+                
+land_ids = fields.One2many(
+'agri.land',
+'farmer_id'
+)

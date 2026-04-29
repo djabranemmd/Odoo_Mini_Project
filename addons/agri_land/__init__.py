@@ -1,2 +1,1 @@
-from . import land
-from . import farmer
+from . import models
