@@ -1,10 +1,9 @@
+# agri_farmers/__manifest__.py
 {
-'name':'Agriculture Farmers',
-'version':'1.0',
-'depends':['base'],
-'data':[
-'security/ir.model.access.csv',
-'views/farmer_views.xml'
-],
-'installable':True,
+    'name': 'Agri Farmers',
+    'version': '1.0',
+    'depends': ['base'],
+    'data': [
+        'views/farmer_views.xml',   # ← Must be listed here
+    ],
 }
