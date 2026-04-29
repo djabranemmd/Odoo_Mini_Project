@@ -2,7 +2,7 @@ from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
 
-class Farmer(models.Model):
+class AgriFarmer(models.Model):
     _name = 'agri.farmer'
     _description = 'Farmer'
 
